@@ -21,55 +21,133 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              FlatButton(
-                color: Colors.red,
-                onPressed: () {
-                  playsound(1);
-                },
-                child: Text(''),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.red,
+                  onPressed: () {
+                    playsound(1);
+                  },
+                  child: Text(''),
+                ),
               ),
-              FlatButton(
-                color: Colors.blue,
-                onPressed: () {
-                  playsound(2);
-                },
-                child: Text(''),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.purple,
+                  onPressed: () {
+                    playsound(2);
+                  },
+                  child: Text(''),
+                ),
               ),
-              FlatButton(
-                color: Colors.green,
-                onPressed: () {
-                  playsound(3);
-                },
-                child: Text(''),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.green,
+                  onPressed: () {
+                    playsound(3);
+                  },
+                  child: Text(''),
+                ),
               ),
-              FlatButton(
-                color: Colors.yellow,
-                onPressed: () {
-                  playsound(4);
-                },
-                child: Text(''),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.yellow,
+                  onPressed: () {
+                    playsound(4);
+                  },
+                  child: Text(''),
+                ),
               ),
-              FlatButton(
-                color: Colors.orange,
-                onPressed: () {
-                  playsound(5);
-                },
-                child: Text(''),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.orange,
+                  onPressed: () {
+                    playsound(5);
+                  },
+                  child: Text(''),
+                ),
               ),
-              FlatButton(
-                color: Colors.teal,
-                onPressed: () {
-                  playsound(6);
-                },
-                child: Text(''),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.teal,
+                  onPressed: () {
+                    playsound(6);
+                  },
+                  child: Text(''),
+                ),
               ),
-              FlatButton(
-                color: Colors.brown,
-                onPressed: () {
-                  playsound(7);
-                },
-                child: Text(''),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.brown,
+                  onPressed: () {
+                    playsound(7);
+                  },
+                  child: Text(''),
+                ),
+              ),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.red,
+                  onPressed: () {
+                    playsound(1);
+                  },
+                  child: Text(''),
+                ),
+              ),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.purple,
+                  onPressed: () {
+                    playsound(2);
+                  },
+                  child: Text(''),
+                ),
+              ),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.green,
+                  onPressed: () {
+                    playsound(3);
+                  },
+                  child: Text(''),
+                ),
+              ),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.yellow,
+                  onPressed: () {
+                    playsound(4);
+                  },
+                  child: Text(''),
+                ),
+              ),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.orange,
+                  onPressed: () {
+                    playsound(5);
+                  },
+                  child: Text(''),
+                ),
+              ),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.teal,
+                  onPressed: () {
+                    playsound(6);
+                  },
+                  child: Text(''),
+                ),
+              ),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.brown,
+                  onPressed: () {
+                    playsound(7);
+                  },
+                  child: Text(''),
+                ),
               ),
             ],
           ),
