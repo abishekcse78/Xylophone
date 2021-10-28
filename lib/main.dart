@@ -1,17 +1,11 @@
-import 'package:english_words/english_words.dart';
-import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:flutter/material.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  void playsound(int soundNumber) {
-    final player = AudioCache();
-    player.play('note$soundNumber.wav');
-  }
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,127 +18,183 @@ class MyApp extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Expanded(
-                child: FlatButton(
-                  color: Colors.red,
+                child: TextButton(
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.green),
+                  ),
                   onPressed: () {
-                    playsound(1);
+                    final player = AudioCache();
+                    player.play('note1.wav');
                   },
                   child: Text(''),
                 ),
               ),
               Expanded(
-                child: FlatButton(
-                  color: Colors.purple,
+                child: TextButton(
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.blue),
+                  ),
                   onPressed: () {
-                    playsound(2);
+                    final player = AudioCache();
+                    player.play('note2.wav');
                   },
                   child: Text(''),
                 ),
               ),
               Expanded(
-                child: FlatButton(
-                  color: Colors.green,
+                child: TextButton(
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.red),
+                  ),
                   onPressed: () {
-                    playsound(3);
+                    final player = AudioCache();
+                    player.play('note3.wav');
                   },
                   child: Text(''),
                 ),
               ),
               Expanded(
-                child: FlatButton(
-                  color: Colors.yellow,
+                child: TextButton(
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.yellow),
+                  ),
                   onPressed: () {
-                    playsound(4);
+                    final player = AudioCache();
+                    player.play('note4.wav');
                   },
                   child: Text(''),
                 ),
               ),
               Expanded(
-                child: FlatButton(
-                  color: Colors.orange,
+                child: TextButton(
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.pink),
+                  ),
                   onPressed: () {
-                    playsound(5);
+                    final player = AudioCache();
+                    player.play('note5.wav');
                   },
                   child: Text(''),
                 ),
               ),
               Expanded(
-                child: FlatButton(
-                  color: Colors.teal,
+                child: TextButton(
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.teal),
+                  ),
                   onPressed: () {
-                    playsound(6);
+                    final player = AudioCache();
+                    player.play('note6.wav');
                   },
                   child: Text(''),
                 ),
               ),
               Expanded(
-                child: FlatButton(
-                  color: Colors.brown,
+                child: TextButton(
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.lightGreen),
+                  ),
                   onPressed: () {
-                    playsound(7);
+                    final player = AudioCache();
+                    player.play('note7.wav');
                   },
                   child: Text(''),
                 ),
               ),
               Expanded(
-                child: FlatButton(
-                  color: Colors.red,
+                child: TextButton(
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.greenAccent),
+                  ),
                   onPressed: () {
-                    playsound(1);
+                    final player = AudioCache();
+                    player.play('note1.wav');
                   },
                   child: Text(''),
                 ),
               ),
               Expanded(
-                child: FlatButton(
-                  color: Colors.purple,
+                child: TextButton(
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.blueAccent),
+                  ),
                   onPressed: () {
-                    playsound(2);
+                    final player = AudioCache();
+                    player.play('note2.wav');
                   },
                   child: Text(''),
                 ),
               ),
               Expanded(
-                child: FlatButton(
-                  color: Colors.green,
+                child: TextButton(
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.redAccent),
+                  ),
                   onPressed: () {
-                    playsound(3);
+                    final player = AudioCache();
+                    player.play('note3.wav');
                   },
                   child: Text(''),
                 ),
               ),
               Expanded(
-                child: FlatButton(
-                  color: Colors.yellow,
+                child: TextButton(
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.yellowAccent),
+                  ),
                   onPressed: () {
-                    playsound(4);
+                    final player = AudioCache();
+                    player.play('note4.wav');
                   },
                   child: Text(''),
                 ),
               ),
               Expanded(
-                child: FlatButton(
-                  color: Colors.orange,
+                child: TextButton(
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.pinkAccent),
+                  ),
                   onPressed: () {
-                    playsound(5);
+                    final player = AudioCache();
+                    player.play('note5.wav');
                   },
                   child: Text(''),
                 ),
               ),
               Expanded(
-                child: FlatButton(
-                  color: Colors.teal,
+                child: TextButton(
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.tealAccent),
+                  ),
                   onPressed: () {
-                    playsound(6);
+                    final player = AudioCache();
+                    player.play('note6.wav');
                   },
                   child: Text(''),
                 ),
               ),
               Expanded(
-                child: FlatButton(
-                  color: Colors.brown,
+                child: TextButton(
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all<Color>(
+                        Colors.lightGreenAccent),
+                  ),
                   onPressed: () {
-                    playsound(7);
+                    final player = AudioCache();
+                    player.play('note7.wav');
                   },
                   child: Text(''),
                 ),
